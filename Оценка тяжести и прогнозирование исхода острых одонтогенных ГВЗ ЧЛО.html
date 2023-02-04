@@ -1,0 +1,291 @@
+
+<!-- saved from url=(0035)http://criticare.chat.ru/s-001.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><!-- SAPE RTB JS -->
+<script type="text/javascript" async="" src="./Прогноз больных с одонтогенными гной-но_files/aci.js.Без названия"></script><script async="async" src="./Оценка тяжести и прогноз ГВЗ ЧЛО_files/12779.js.Без названия" type="text/javascript">
+</script>
+<!-- SAPE RTB END -->
+
+
+
+<h1>Оценка тяжести и прогнозирование исхода острых одонтогенных гнойно-воспалительных заболеваний челюстно-лицевой области </h1> <br> <h2></h2><br><img src="./Оценка тяжести и прогноз ГВЗ ЧЛО_files/transparent.gif" width="1" height="20"><br>
+
+<script language="javascript">function CalcTEMP(form) {
+form.ztemp.value = form.temp[form.temp.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcPAM(form) {
+form.zpam.value = form.pam[form.pam.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcFC(form) {
+form.zfc.value = form.fc[form.fc.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcFR(form) {
+form.zfr.value = form.fr[form.fr.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcAA(form) {
+form.zaa.value = form.aa[form.aa.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcPAO(form) {
+form.zpao.value = form.pao[form.pao.selectedIndex].value
+form.zapa.value= CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcHCO(form) {
+form.zhco.value = form.hco[form.hco.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcPH(form) {
+form.zph.value = form.ph[form.ph.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcNA(form) {
+form.zna.value = form.na[form.na.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcKA(form) {
+form.zka.value = form.ka[form.ka.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcUREE(form) {
+form.zuree.value = form.uree[form.uree.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+}
+function CalcUREA(form) {
+form.zurea.value = form.urea[form.urea.selectedIndex].value
+form.zapa.value = CalcAPA(form)
+form.zmort.value = CalcMort(form)
+form.zmorta.value = CalcMorta(form)
+
+
+}
+function CalcAPA(form) {
+
+z =eval(form.ztemp.value)
+z = z + eval(form.zpam.value)
+z = z + eval(form.zfc.value)
+z = z + eval(form.zfr.value)
+z = z + eval(form.zaa.value)
+z = z + eval(form.zpao.value)
+z = z + eval(form.zhco.value)
+z = z + eval(form.zph.value)
+z = z + eval(form.zna.value)
+z = z + eval(form.zka.value)
+z = z + eval(form.zuree.value)
+z = z + eval(form.zurea.value)
+
+return Number(z)+Number(document.glasgow.res.value)
+}
+
+
+function CalcMort(form) {
+z = eval(form.zapa.value)
+z = -3.517 + z * (0.146)
+z = Math.exp(z) / (1 + Math.exp(z))
+z = Fmt(100 * z) + " %"
+return z
+}
+
+function CalcMorta(form) {
+z = eval(form.zapa.value)
+z = -3.517 + (z * (0.146))
+z = eval(form.y.value + "+z")
+z = Math.exp(z) / (1 + Math.exp(z))
+z = Fmt(100 * z) + " %"
+form.zmorta.value = z
+return z
+}
+
+function Fmt(x) { 
+var v
+if(x>=0) { v=''+(x+0.05) } else { v=''+(x-0.05) }
+return v.substring(0,v.indexOf('.')+2)
+}</script>
+
+   
+ Локализация гнойно-воспалительного заболевания в челюстно-лицевой области <br>      
+ 
+<a name="glasgow"></a>
+<script language="JavaScript">num1 = 0 ; num2 = 0 ; num3 = 0; num4 = 0; num5 = 0; num6 = 0; num7 = 0; num8 = 0; num9 = 0; num10 = 0; num11 = 0; num12 = 0; num13 = 0; num14 = 0; num15 = 0; function calcul() { chaine = " " ;  num = num1+num2+num3+num4+num5+num6+num7+num8+num9+num10+num11+num12+num13+num14+num15;  document.glasgow.res.value = num ;  }</script>
+
+
+<form name="glasgow" action="http://criticare.chat.ru/s-001.html" method="post">
+
+<tr>
+    <td class="leftcells">
+      <input class="nob" onclick="num1=10, calcul()" type="radio" value="10" name="1">Подглазничная область<br>
+      <input class="nob" onclick="num2=10, calcul()" type="radio" value="10" name="2">Щечная область<br>
+      <input class="nob" onclick="num3=20, calcul()" type="radio" value="20" name="3">Подподбородочная область<br>
+ <td class="leftcells2">
+      <input class="nob" onclick="num4=10, calcul()" type="radio" value="10" name="4">Скуловая область<br>
+    <td class="leftcells">
+      <input class="nob" onclick="num5=20, calcul()" type="radio" value="20" name="5>Околоушно-жевательная область<br></td>
+      <input class="nob" onclick="num6=20, calcul()" type="radio" value="20" name="6>Поднижнечелюстное пространство<br>
+      <input class="nob" onclick="num7=20, calcul()" type="radio" value="20" name="7">Подъязычная область, тело языка<br></td>
+      <input class="nob" onclick="num8=30, calcul()" type="radio" value="30" name="8">Позадичелюстная область<br>
+      <input class="nob" onclick="num9=30, calcul()" type="radio" value="30" name="9">Крыло-небная ямка<br></td>
+   <td class="leftcells">
+      <input class="nob" onclick="num10=40, calcul()" type="radio" value="40" name="10">Подвисочная ямка<br>
+      <input class="nob" onclick="num11=30, calcul()" type="radio" value="30" name="11">Крыловидно-нижнечелюстное пространство<br></td>
+      <input class="nob" onclick="num12=30, calcul()" type="radio" value="30" name="12">Корень языка<br>
+      <input class="nob" onclick="num13=60, calcul()" type="radio" value="60" name="13">Дно полости рта<br></td>
+      <input class="nob" onclick="num14=60, calcul()" type="radio" value="60" name="14">Окологлоточное пространство<br></td>
+      <input class="nob" onclick="num15=80, calcul()" type="radio" value="80" name="15">Височная область, теменная область глазница, шея, гнойный медиастинит <br></td></tr></tbody></table>
+Балл= <input size="3" name="res"> </form>
+
+
+
+<a name="grad"></a>&nbsp;
+<script language="JavaScript"><!--
+function clearInput(form) 
+{
+form.paco2.value="";
+form.pao2.value="";
+form.pkaco2.value="";
+form.pkao2.value="";
+form.fio2.value="";
+form.fkio2.value="";
+form.paa.value="";
+form.kaa.value="";
+}
+function calcule(form){
+
+
+		
+		form.paa.value=(form.fio2.value)*1/((form.pao2.value)*1+(form.paco2.value)*1)
+		
+
+form.paa.value=form.paa.value.substring(0,3);
+form.kaa.value=form.kaa.value.substring(0,3);
+}
+
+//--></script>
+
+<form action="http://criticare.chat.ru/s-001.html" method="post">
+
+<table cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td class="headertable" colspan="2">Коэффициент, определяющий качестенный и количественный состав лейкоцитов</td>
+    <td class="headertable" style="border-left: 0px; vertical-align: midдлe" rowspan="5"><input onclick="calcule(form)" type="button" value="Вычислить" name="Bouton"><br><br> <input type="reset" value="Очистить"></td>
+    <td class="headertable" style="border-left: 0px; vertical-align: bottom" colspan="2"> </td></tr>
+  <tr>
+    <td class="leftcells" style="text-align: right">Моноциты, % &nbsp; <input size="4" name="paco2"></td>
+    <td rowspan="3" class="leftcells2" style="text-align: right"><br><br><input size="6" name="paa"></td>
+
+   
+  <tr>
+    <td class="leftcells" style="text-align: right">Лимфоциты, % &nbsp; <input size="5" name="pao2"></td>
+   
+  <tr>
+    <td class="leftcells" style="text-align: right">Нейтрофилы, %<br> &nbsp; <input size="4" name="fio2"></td>
+
+  <tr>
+ 
+</form>
+<br><br>
+
+
+
+
+<form action="http://criticare.chat.ru/s-001.html" method="post">
+<table cellspacing="0" cellpadding="0" width="750">
+  <tbody><tr>
+    <td class="scalecells2" style="border-top: 1px solid black">
+      Температура тела (°C)<br><br><select onchange="CalcTEMP(this.form)" name="temp"> <option value="0" selected=""></option><option value="4">&lt; = 36,5 
+        °C</option><option value="0">36,6-37,5 °C</option><option value="2">37,6-38,5 °C</option><option value="5">38,6-39,5 °C</option><option value="11">&gt; = 39,6 °C</option></select><br>
+      <input size="2" value="0" name="ztemp">
+     </td>
+    <td class="scalecells" style="border-top: 1px solid black">
+     СОЭ, мм/ч<br> <br><select onchange="CalcPAM(this.form)" name="pam"> 
+        <option value="0" selected=""></option><option value="0">&lt; = 9</option><option value="2">10-19</option><option value="6">20-29</option><option value="14">30-39</option><option value="27">40-49</option><option value="44">50-59</option><option value="60">&gt; = 60</option></select><br>
+      <input size="2" value="0" name="zpam">
+     </td>
+    <td class="scalecells" style="border-top: 1px solid black">
+      Частота сердечных сокращений, в минуту.<br><br><select onchange="CalcFC(this.form)" name="fc"> <option value="0" selected=""></option><option value="0">&lt; = 80</option><option value="5">81-90</option><option value="10">91-100</option><option value="17">101-110</option><option value="25">111-120</option><option value="32">121-130</option><option value="40">&gt;=131</option></select><br>
+        <input size="2" value="0" name="zfc">
+    </td></tr>
+  <tr>
+    <td class="scalecells2">
+     Лейкоциты, тыс в 1 мкл<br><br>
+      <select onchange="CalcFR(this.form)" name="fr"> <option value="0" selected=""></option><option value="30">&lt; = 3,9</option><option value="0">4-9</option><option value="2">10-19,9</option><option value="6">20-29,9</option><option value="60">>
+= 30</option>>&gt; = 50</option></select><br><input size="2" value="0" name="zfr">
+     </td>
+    <td class="scalecells">
+   Результаты микробиологического <br>исследования <br>
+      <select onchange="CalcAA(this.form)" name="aa"> <option value="0" selected=""></option><option value="0">Чувствительные штаммы аэробных и факультативно-анаэробных
+</option><option value="20">Чувствительные штаммы анаэробных микроорганизмов</option><option value="40">Резистентные штаммы микроорганизмов</option><option value="100">Представители рода Клостридии</option></select><br><input size="2" value="0" name="zaa">
+     </td>
+    <td class="scalecells">
+     Развитие сепсиса<br><br>
+      <select onchange="CalcPAO(this.form)" name="pao"> <option value="0" selected=""></option><option value="0">Отсутствуют критерии</option><option value="75"> Наличие маркеров сепсиса</option><option value="100">Наличие маркера органной недостаточности</option></select><br><input size="2" value="0" name="zpao">
+     </td></tr>
+  <tr>
+    <td class="scalecells2">
+      Функциональные<br>нарушение<br>
+      <div align="center"><select onchange="CalcHCO(this.form)" name="hco"> <option value="0" selected=""></option><option value="5"> Затруднение открывания рта</option><option value="10">Затруднение 
+        глотания</option><option value="15">Затруднение открывания рта и глотания</option></option></select><br><input size="2" value="0" name="zhco">
+    </div></td>
+    <td class="scalecells">
+      Затруднение речи<br><br>
+      <select onchange="CalcPH(this.form)" name="ph"> <option value="0" selected=""></option><option value="0">Нет</option><option value="15">Есть</option></select><br><input size="2" value="0" name="zph">
+    </td>
+    <td class="scalecells">
+     Нарушение дыхания<br><br>
+      <select onchange="CalcNA(this.form)" name="na"> <option value="0" selected=""></option><option value="0">Нет</option><option value="20">Есть</option></select><br><input size="2" value="0" name="zna">
+    </td></tr>
+  <tr>
+    <td class="scalecells2">
+      Один сопутствующий синдром<br><br>
+      <select onchange="CalcKA(this.form)" name="ka"> <option value="0" selected=""></option><option value="5">Метаболический синдром <br> (АГ, СД, ИБС)</option><option value="5">Синдром вторичного иммунодефицита (прием иммуносупрессивных препаратов)</option><option value="5">Инфекционный вирусный синдром (ВИЧ, гепатит В,С)</option><option value="5">Неопластический синдром (злокачественные новообразования)</option><option value="5">Инфекционный бактериальный синдром ЛОР-органов, ЧЛО </option></select><br><input size="2" value="0" name="zka">
+    </td>
+    <td class="scalecells">
+     Синдром сопуствующих заболеваний<br>(2 и более синдрома), беременность <br>
+      <select onchange="CalcUREE(this.form)" name="uree"> 
+        <option value="0" selected=""></option><option value="0">Нет</option><option value="15">Есть</option></select><br><input size="2" value="0" name="zuree">
+    </td>
+    <td class="scalecells">
+     Коэффициент <br>
+      <select onchange="CalcUREA(this.form)" name="urea"> 
+        <option value="0" selected=""></option><option value="0" selected=""></option><option value="0">&lt; = 2,0 
+        </option><option value="3">2,1-2,9</option><option value="12">3,0-3,9</option><option value="22">4,0-4,9</option><option value="35">5,0-5,9</option><option value="49">6,0-6,9</option><option value="62">7,0 и выше</option>/select><br><input size="2" value="0" name="zurea">
+    </td></tr>
+  <tr>
+    </td>
+    <td class="scalecells" style="background: #cccccc; font-weight: 700">
+      <a name="calcul"></a>
+     Итоговый балл<br><br>
+      <input size="4" value="0" name="zapa"><br><input type="reset" value="Очистить">
+    </td>
+   </td></tr></tbody></table><br><br>
+
+Интерпретация результатов: <br> 
+0-100,9  –  легкая степень тяжести пациента, низкий риск жизнеугрожающих осложнений, прогноз заболевания благоприятный<br>
+101-199,9 – средняя степень тяжести пациента, средний риск жизнеугрожающих осложнений, прогноз заболевания сомнительный<br>  
+>200 – тяжелая степень тяжести пациента, высокий риск жизнеугрожающих осложнений, прогноз заболевания неблагоприятный<br>
+
+
+
